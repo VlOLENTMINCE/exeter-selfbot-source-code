@@ -806,10 +806,10 @@ async def help(ctx, category=None):
     await ctx.message.delete()
     if category is None:
         embed = discord.Embed(color=0xFF633B, timestamp=ctx.message.created_at)
-        embed.set_author(name="𝙀𝙓𝙀𝙏𝙀𝙍 𝙎𝙀𝙇𝙁𝘽𝙊𝙏 | 𝙋𝙍𝙀𝙁𝙄𝙓: " + str(Exeter.command_prefix),
+        embed.set_author(name="VIOLENTMINCE SELFBOT | 𝙋𝙍𝙀𝙁𝙄𝙓: " + str(Exeter.command_prefix),
                          icon_url=Exeter.user.avatar_url)
         embed.set_thumbnail(url=Exeter.user.avatar_url)
-        embed.set_image(url="https://cdn.discordapp.com/attachments/723250694118965300/723253781873164298/image1.gif")
+        embed.set_image(url="https://media.discordapp.net/attachments/754246703212789844/757830903849549824/image0.gif")
         embed.add_field(name="\uD83E\uDDCA `GENERAL`", value="Shows all general commands", inline=False)
         embed.add_field(name="\uD83E\uDDCA `ACCOUNT`", value="Shows all account commands", inline=False)
         embed.add_field(name="\uD83E\uDDCA `TEXT`", value="Shows all text commands", inline=False)
@@ -822,7 +822,7 @@ async def help(ctx, category=None):
         await ctx.send(embed=embed)
     elif str(category).lower() == "general":
         embed = discord.Embed(color=random.randrange(0x1000000), timestamp=ctx.message.created_at)
-        embed.set_image(url="https://cdn.discordapp.com/attachments/723250694118965300/723272273888280576/image0.gif")
+        embed.set_image(url="https://media.discordapp.net/attachments/754246703212789844/757830903849549824/image0.gif")
         embed.description = f"\uD83D\uDCB0 `GENERAL COMMANDS`\n`> help <category>` - returns all commands of that category\n`> uptime` - return how long the selfbot has been running\n`> prefix <prefix>` - changes the bot's prefix\n`> ping` - returns the bot's latency\n`> av <user>` - returns the user's pfp\n`> whois <user>` - returns user's account info\n`> tokeninfo <token>` - returns information about the token\n`> copyserver` - makes a copy of the server\n`> rainbowrole <role>` - makes the role a rainbow role (ratelimits)\n`> serverinfo` - gets information about the server\n`> serverpfp` - returns the server's icon\n`> banner` - returns the server's banner\n`> shutdown` - shutsdown the selfbot\n"
         await ctx.send(embed=embed)
     elif str(category).lower() == "account":
