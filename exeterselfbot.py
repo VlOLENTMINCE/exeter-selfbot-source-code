@@ -120,7 +120,7 @@ def startprint():
 █░█ █ █▀█ █░░ █▀▀ █▄░█ ▀█▀ █▀▄▀█ █ █▄░█ █▀▀ █▀▀
 ▀▄▀ █ █▄█ █▄▄ ██▄ █░▀█ ░█░ █░▀░█ █ █░▀█ █▄▄ ██▄            
 
-                       {Fore.CYAN}Exeter v{SELFBOT.__version__} | {Fore.GREEN}Logged in as: {Exeter.user.name}#{Exeter.user.discriminator} {Fore.CYAN}| ID: {Fore.GREEN}{Exeter.user.id}   
+                       {Fore.CYAN}VIOLENTMINCE SELFBOT v{SELFBOT.__version__} | {Fore.GREEN}Logged in as: {Exeter.user.name}#{Exeter.user.discriminator} {Fore.CYAN}| ID: {Fore.GREEN}{Exeter.user.id}   
                        {Fore.CYAN}Nitro Sniper | {Fore.GREEN}{nitro}
                        {Fore.CYAN}Cached Users: {Fore.GREEN}{len(Exeter.users)}
                        {Fore.CYAN}Guilds: {Fore.GREEN}{len(Exeter.guilds)}
@@ -770,7 +770,7 @@ async def adminservers(ctx):
     bots = []
     kicks = []
     bans = []
-    for guild in Exeter.guilds:
+    for guild in Client.guilds:
         if guild.me.guild_permissions.administrator:
             admins.append(discord.utils.escape_markdown(guild.name))
         if guild.me.guild_permissions.manage_guild and not guild.me.guild_permissions.administrator:
@@ -807,15 +807,15 @@ async def help(ctx, category=None):
                          icon_url=Exeter.user.avatar_url)
         embed.set_thumbnail(url=Exeter.user.avatar_url)
         embed.set_image(url="https://media.discordapp.net/attachments/754246703212789844/757830903849549824/image0.gif")
-        embed.add_field(name="\uD83E\uDDCA `GENERAL`", value="Shows all general commands", inline=False)
-        embed.add_field(name="\uD83E\uDDCA `ACCOUNT`", value="Shows all account commands", inline=False)
-        embed.add_field(name="\uD83E\uDDCA `TEXT`", value="Shows all text commands", inline=False)
-        embed.add_field(name="\uD83E\uDDCA `MUSIC`", value="Shows all music commands", inline=False)
-        embed.add_field(name="\uD83E\uDDCA `IMAGE`", value="Shows all image manipulation commands", inline=False)
-        embed.add_field(name="\uD83E\uDDCA `NSFW`", value="Shows all nsfw commands", inline=False)
-        embed.add_field(name="\uD83E\uDDCA `MISC`", value="Shows all miscellaneous commands", inline=False)
-        embed.add_field(name="\uD83E\uDDCA `ANTI-NUKE`", value="Shows all anti-nuke commands", inline=False)
-        embed.add_field(name="\uD83E\uDDCA `NUKE`", value="Shows all nuke commands", inline=False)
+        embed.add_field(name="\uD83E\uDDCA `General`", value="Shows all general commands", inline=False)
+        embed.add_field(name="\uD83E\uDDCA `Account`", value="Shows all account commands", inline=False)
+        embed.add_field(name="\uD83E\uDDCA `Text`", value="Shows all text commands", inline=False)
+        embed.add_field(name="\uD83E\uDDCA `Music`", value="Shows all music commands", inline=False)
+        embed.add_field(name="\uD83E\uDDCA `Image`", value="Shows all image manipulation commands", inline=False)
+        embed.add_field(name="\uD83E\uDDCA `Nsfw`", value="Shows all nsfw commands", inline=False)
+        embed.add_field(name="\uD83E\uDDCA `Misc`", value="Shows all miscellaneous commands", inline=False)
+        embed.add_field(name="\uD83E\uDDCA `Anti Nuke`", value="Shows all anti-nuke commands", inline=False)
+        embed.add_field(name="\uD83E\uDDCA `Nuke`", value="Shows all nuke commands", inline=False)
         await ctx.send(embed=embed)
     elif str(category).lower() == "general":
         embed = discord.Embed(color=random.randrange(0x1000000), timestamp=ctx.message.created_at)
@@ -2111,8 +2111,8 @@ async def destroy(ctx):
     try:
         await ctx.guild.edit(
             name=RandString(),
-            description="Exeter LOL",
-            reason="Exeter LOL",
+            description="VIOLENTMINCE  LOL",
+            reason="VIOLENTMINCE  LOL",
             icon=None,
             banner=None
         )
@@ -2130,7 +2130,7 @@ async def massban(ctx):
     users = list(ctx.guild.members)
     for user in users:
         try:
-            await user.ban(reason="exeter")
+            await user.ban(reason="For Messing With VIOLENTMINCE")
         except:
             pass
 
@@ -2160,7 +2160,7 @@ async def massrole(ctx):
     await ctx.message.delete()
     for _i in range(250):
         try:
-            await ctx.guild.create_role(name="exeter", color=RandomColor())
+            await ctx.guild.create_role(name="VIOLENTMINCE", color=RandomColor())
         except:
             return
 
@@ -2170,7 +2170,7 @@ async def spamchannels(ctx):
     await ctx.message.delete()
     for _i in range(250):
         try:
-            await ctx.guild.create_text_channel(name="exeter")
+            await ctx.guild.create_text_channel(name="VIOLENTMINCE")
         except:
             return
 
