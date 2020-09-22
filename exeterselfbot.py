@@ -203,21 +203,21 @@ colorama.init()
 Exeter = discord.Client()
 Exeter = commands.Bot(description='Exeter Selfbot', command_prefix=prefix, self_bot=True)
 
-VIOLENTMINCE.antiraid = False
-VIOLENTMINCE.msgsniper = True
-VIOLENTMINCE.slotbot_sniper = True
-VIOLENTMINCE.giveaway_sniper = True
-VIOLENTMINCE.mee6 = False
-VIOLENTMINCE.mee6_channel = None
-VIOLENTMINCE.yui_kiss_user = None
-VIOLENTMINCE.yui_kiss_channel = None
-VIOLENTMINCE.yui_hug_user = None
-VIOLENTMINCE.yui_hug_channel = None
-VIOLENTMINCE.sniped_message_dict = {}
-VIOLENTMINCE.sniped_edited_message_dict = {}
-VIOLENTMINCE.whitelisted_users = {}
-VIOLENTMINCE.copycat = None
-VIOLENTMINCE.remove_command('help')
+Exeter.antiraid = False
+Exeter.msgsniper = True
+Exeter.slotbot_sniper = True
+Exeter.giveaway_sniper = True
+Exeter.mee6 = False
+Exeter.mee6_channel = None
+Exeter.yui_kiss_user = None
+Exeter.yui_kiss_channel = None
+Exeter.yui_hug_user = None
+Exeter.yui_hug_channel = None
+Exeter.sniped_message_dict = {}
+Exeter.sniped_edited_message_dict = {}
+Exeter.whitelisted_users = {}
+Exeter.copycat = None
+Exeter.remove_command('help')
 
 
 @Exeter.event
