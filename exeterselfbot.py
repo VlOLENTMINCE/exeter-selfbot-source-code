@@ -120,11 +120,11 @@ def startprint():
                                   █░█ █ █▀█ █░░ █▀▀ █▄░█ ▀█▀ █▀▄▀█ █ █▄░█ █▀▀ █▀▀
                                   ▀▄▀ █ █▄█ █▄▄ ██▄ █░▀█ ░█░ █░▀░█ █ █░▀█ █▄▄ ██▄            
 
-                       {Fore.CYAN}VIOLENTMINCE SELFBOT v{SELFBOT.__version__} | {Fore.red}Logged in as: {VIOLENTMINCE.user.name}#{VIOLENTMINCE.user.discriminator} {Fore.CYAN}| ID: {Fore.red}{VIOLENTMINCE.user.id}   
-                       {Fore.CYAN}Nitro Sniper | {Fore.red}{nitro}
-                       {Fore.CYAN}Cached Users: {Fore.red}{len(VIOLENTMINCE.users)}
-                       {Fore.CYAN}Guilds: {Fore.red}{len(VIOLENTMINCE.guilds)}
-                       {Fore.CYAN}Prefix: {Fore.red}{VIOLENTMINCE.command_prefix}
+                       {Fore.CYAN}VIOLENTMINCE SELFBOT v{SELFBOT.__version__} | {Fore.GREEN}Logged in as: {Exeter.user.name}#{Exeter.user.discriminator} {Fore.CYAN}| ID: {Fore.GREEN}{Exeter.user.id}   
+                       {Fore.CYAN}Nitro Sniper | {Fore.GREEN}{nitro}
+                       {Fore.CYAN}Cached Users: {Fore.GREEN}{len(Exeter.users)}
+                       {Fore.CYAN}Guilds: {Fore.GREEN}{len(Exeter.guilds)}
+                       {Fore.CYAN}Prefix: {Fore.GREEN}{Exeter.command_prefix}
     ''' + Fore.RESET)
 
 
@@ -201,7 +201,7 @@ def RandString():
 
 colorama.init()
 Exeter = discord.Client()
-Exeter = commands.Bot(description='Exeter Selfbot', command_prefix=prefix, self_bot=True)
+Exeter = commands.Bot(description='VIOLENTMINCE,Selfbot', command_prefix=prefix, self_bot=True)
 
 Exeter.antiraid = False
 Exeter.msgsniper = True
@@ -212,8 +212,7 @@ Exeter.mee6_channel = None
 Exeter.yui_kiss_user = None
 Exeter.yui_kiss_channel = None
 Exeter.yui_hug_user = None
-Exeter.yui_hug_channel = None
-Exeter.sniped_message_dict = {}
+Exeter.yui_hug_channel = None.sniped_message_dict = {}
 Exeter.sniped_edited_message_dict = {}
 Exeter.whitelisted_users = {}
 Exeter.copycat = None
