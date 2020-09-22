@@ -120,11 +120,11 @@ def startprint():
                                   █░█ █ █▀█ █░░ █▀▀ █▄░█ ▀█▀ █▀▄▀█ █ █▄░█ █▀▀ █▀▀
                                   ▀▄▀ █ █▄█ █▄▄ ██▄ █░▀█ ░█░ █░▀░█ █ █░▀█ █▄▄ ██▄            
 
-                       {Fore.CYAN}VIOLENTMINCE SELFBOT v{SELFBOT.__version__} | {Fore.PURPLE}Logged in as: {VIOLENTMINCE.user.name}#{VIOLENTMINCE.user.discriminator} {Fore.CYAN}| ID: {Fore.PURPLE}{VIOLENTMINCE.user.id}   
-                       {Fore.CYAN}Nitro Sniper | {Fore.PURPLE}{nitro}
-                       {Fore.CYAN}Cached Users: {Fore.PURPLE}{len(VIOLENTMINCE.users)}
-                       {Fore.CYAN}Guilds: {Fore.PURPLE}{len(VIOLENTMINCE.guilds)}
-                       {Fore.CYAN}Prefix: {Fore.PURPLE}{VIOLENTMINCE.command_prefix}
+                       {Fore.CYAN}VIOLENTMINCE SELFBOT v{SELFBOT.__version__} | {Fore.red}Logged in as: {VIOLENTMINCE.user.name}#{VIOLENTMINCE.user.discriminator} {Fore.CYAN}| ID: {Fore.red}{VIOLENTMINCE.user.id}   
+                       {Fore.CYAN}Nitro Sniper | {Fore.red}{nitro}
+                       {Fore.CYAN}Cached Users: {Fore.red}{len(VIOLENTMINCE.users)}
+                       {Fore.CYAN}Guilds: {Fore.red}{len(VIOLENTMINCE.guilds)}
+                       {Fore.CYAN}Prefix: {Fore.red}{VIOLENTMINCE.command_prefix}
     ''' + Fore.RESET)
 
 
