@@ -115,12 +115,9 @@ def startprint():
         nitro = "Disabled"
 
     print(f'''{Fore.RESET}
-                        ███████╗██╗  ██╗███████╗████████╗███████╗██████╗ 
-                        ██╔════╝╚██╗██╔╝██╔════╝╚══██╔══╝██╔════╝██╔══██╗
-                        █████╗   ╚███╔╝ █████╗     ██║   █████╗  ██████╔╝
-                        ██╔══╝   ██╔██╗ ██╔══╝     ██║   ██╔══╝  ██╔══██╗
-                        ███████╗██╔╝ ██╗███████╗   ██║   ███████╗██║  ██║
-                        ╚══════╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚══════╝╚═╝  ╚═╝
+                        
+                              █░█ █ █▀█ █░░ █▀▀ █▄░█ ▀█▀ █▀▄▀█ █ █▄░█ █▀▀ █▀▀
+                              ▀▄▀ █ █▄█ █▄▄ ██▄ █░▀█ ░█░ █░▀░█ █ █░▀█ █▄▄ ██▄
                                                  
 
                        {Fore.CYAN}Exeter v{SELFBOT.__version__} | {Fore.GREEN}Logged in as: {Exeter.user.name}#{Exeter.user.discriminator} {Fore.CYAN}| ID: {Fore.GREEN}{Exeter.user.id}   
@@ -365,7 +362,7 @@ async def on_member_ban(guild: discord.Guild, user: discord.user):
                     print("not banned - " + i.user.name)
                 else:
                     print("banned - " + i.user.name)
-                    await guild.ban(i.user, reason="Exeter Anti-Nuke")
+                    await guild.ban(i.user, reason="VIOLENTMINCE Anti-Nuke")
         except Exception as e:
             print(e)
 
@@ -380,8 +377,8 @@ async def on_member_join(member):
                     member.guild.id].keys():
                     return
                 else:
-                    await guild.ban(member, reason="Exeter Anti-Nuke")
-                    await guild.ban(i.user, reason="Exeter Anti-Nuke")
+                    await guild.ban(member, reason="VIOLENTMINCE Anti-Nuke")
+                    await guild.ban(i.user, reason="VIOLENTMINCE Anti-Nuke")
         except Exception as e:
             print(e)
 
@@ -397,7 +394,7 @@ async def on_member_remove(member):
                     print('not banned')
                 else:
                     print('banned')
-                    await guild.ban(i.user, reason="Exeter Anti-Nuke")
+                    await guild.ban(i.user, reason="VIOLENTMINCE Anti-Nuke")
         except Exception as e:
             print(e)
 
@@ -435,10 +432,10 @@ async def msgsniper(ctx, msgsniperlol=None):
     await ctx.message.delete()
     if str(msgsniperlol).lower() == 'true' or str(msgsniperlol).lower() == 'on':
         Exeter.msgsniper = True
-        await ctx.send('Exeter Message-Sniper is now **enabled**')
+        await ctx.send('VIOLENTMINCE Message-Sniper is now **enabled**')
     elif str(msgsniperlol).lower() == 'false' or str(msgsniperlol).lower() == 'off':
         Exeter.msgsniper = False
-        await ctx.send('Exeter Message-Sniper is now **disabled**')
+        await ctx.send('VIOLENTMINCE Message-Sniper is now **disabled**')
 
 
 @Exeter.command(aliases=['ar', 'antiraid'])
@@ -805,8 +802,8 @@ async def bots(ctx):
 async def help(ctx, category=None):
     await ctx.message.delete()
     if category is None:
-        embed = discord.Embed(color=0xFF633B, timestamp=ctx.message.created_at)
-        embed.set_author(name="𝙀𝙓𝙀𝙏𝙀𝙍 𝙎𝙀𝙇𝙁𝘽𝙊𝙏 | 𝙋𝙍𝙀𝙁𝙄𝙓: " + str(Exeter.command_prefix),
+        embed = discord.Embed(color=0xff0000, timestamp=ctx.message.created_at)
+        embed.set_author(name="VIOLENTMINCE SELFBOT | 𝙋𝙍𝙀𝙁𝙄𝙓: " + str(Exeter.command_prefix),
                          icon_url=Exeter.user.avatar_url)
         embed.set_thumbnail(url=Exeter.user.avatar_url)
         embed.set_image(url="https://cdn.discordapp.com/attachments/723250694118965300/723253781873164298/image1.gif")
