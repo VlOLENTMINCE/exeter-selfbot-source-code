@@ -804,7 +804,7 @@ async def help(ctx, category=None):
     if category is None:
         embed = discord.Embed(color=#000000, timestamp=ctx.message.created_at)
         embed.set_author(name="Mayhem Selfbot | 𝙋𝙍𝙀𝙁𝙄𝙓: " + str(Exeter.command_prefix),
-                         icon_url=Exeter.user.avatar_url)
+        icon_url=Exeter.user.avatar_url)
         embed.set_thumbnail(url=Exeter.user.avatar_url)
         embed.set_image(url="https://media.discordapp.net/attachments/766885584484171786/767892624421683230/image0.gif")
         embed.add_field(name="\uD83E\uDDCA `General`", value="Shows all general commands", inline=False)
